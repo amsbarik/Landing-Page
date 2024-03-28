@@ -1,0 +1,19 @@
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+}
+
+input, button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    // border: 1px solid #157415 !important;
+  }

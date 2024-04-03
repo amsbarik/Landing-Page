@@ -158,7 +158,7 @@
   background-color: $primary-color;
   background-image: url(../img/review-bg.png);
   .review-wrap{
-    height: 700px;
+    height: 350px;
     color: $tertiary-color;
     .carousel-item{
       padding: 0 100px 0 100px;
@@ -168,8 +168,6 @@
     }
   }
 
-  .carousel-control-prev{margin-left: -100px;}
-  .carousel-control-next{margin-right: -100px;}
 }
 //reiew css end
 
@@ -254,11 +252,10 @@
 @media (max-width: 1200px) {
  
 .review{
+  position: relative;
   .review-wrap{
-    height: 530px;
+    height: 270px;
   }
-  .carousel-control-prev{margin-left: -60px;}
-  .carousel-control-next{margin-right: -60px;}
 }
 
 }
@@ -266,10 +263,17 @@
 @media (max-width: 992px) {
 .review{
   .review-wrap{
-    height: 400px;
+    height: 300px;
   }
-  .carousel-control-prev{margin-left: -60px;}
-  .carousel-control-next{margin-right: -60px;}
+  .rev-slide .slick-prev {
+    top: -16px ;
+    left: 88% ;
+  }
+  
+  .rev-slide .slick-next {
+    top: -16px ;
+    left: 93% ;
+  }
 }
 
 .checkout{
@@ -327,10 +331,8 @@
 @media (max-width: 768px) {
 .review{
   .review-wrap{
-    height: 300px;
+    height: 240px;
   }
-  .carousel-control-prev{margin-left: -60px;}
-  .carousel-control-next{margin-right: -60px;}
 }
 
 .footer{
@@ -357,10 +359,17 @@
   }
 .review{
   .review-wrap{
-    height: 220px;
+    height: 200px !important;
   }
-  .carousel-control-prev{margin-left: -10px;}
-  .carousel-control-next{margin-right: -10px;}
+  .rev-slide .slick-prev {
+    top: -16px ;
+    left: 83% ;
+  }
+  
+  .rev-slide .slick-next {
+    top: -16px ;
+    left: 89% ;
+  }
 }
 
 .checkout{
@@ -393,16 +402,31 @@
     }
     }
   }
+
+  .review{
+    .review-wrap{
+      height: 170px;
+      
+    }
+  }
 }
 
 @media (max-width: 400px) {
 
 .review{
   .review-wrap{
-    height: 190px;
+    height: 140px;
   }
-  .carousel-control-prev{margin-left: -10px;}
-  .carousel-control-next{margin-right: -10px;}
+  
+  .rev-slide .slick-prev {
+    top: -16px ;
+    left: 80% ;
+  }
+  
+  .rev-slide .slick-next {
+    top: -16px ;
+    left: 88% ;
+  }
 }
 
 .footer{
@@ -414,9 +438,7 @@
 }
 }
 
-@media (max-width: 362px) {
- 
-}
+
 
 
 
@@ -462,10 +484,27 @@
 // go to to end 
 
 
+.rev-slide .slick-prev {
+  background-color: #00A884;
+  position: absolute !important;
+  top: -16px ;
+  left: 91% ;
+}
 
+.rev-slide .slick-next {
+  background-color: #00A884;
+  position: absolute !important;
+  top: -16px ;
+  left: 94% ;
+}
 
+.rev-slide .slick-prev:hover {
+  background-color: #00A884;
+}
 
-
+.rev-slide .slick-next:hover {
+  background-color: #00A884;
+}
 
 
 

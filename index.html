@@ -11,6 +11,9 @@
     <!--font-awesome lik-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+
     <title>Home</title>
 </head>
 <body>
@@ -397,39 +400,26 @@
     <section class="review py-3 py-md-4 py-lg-5">
       <div class="container">
         <div class="review-wrap">
-          <h1 class="text-center text-white">আমাদের কাস্টমার ফিডব্যাক</h1>
-          <div id="review-carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner ">
-              <div class="carousel-item px-5 mt-3 pt-lg-4 active">
-                <div class="row g-2 g-md-3 row-cols-2">
-                  <!-- 600*300 px image recomended  -->
-                  <div class="col"><img src="img/feedback.jpg" class="card-img-top rounded-4" alt=""></div>
-                  <div class="col"><img src="img/feedback.jpg" class="card-img-top rounded-4" alt=""></div>
-                  <div class="col"><img src="img/feedback.jpg" class="card-img-top rounded-4" alt=""></div>
-                  <div class="col"><img src="img/feedback.jpg" class="card-img-top rounded-4" alt=""></div>
-                </div>
-              </div>
+          <h1 class="text-center text-white mb-4">আমাদের কাস্টমার ফিডব্যাক</h1>
+          
+          <div class="rev-slide ">
 
-              <div class="carousel-item px-5 mt-3 pt-lg-4 ">
-                <div class="row g-2 g-md-3 row-cols-2">
-                  <!-- 600*300 px image recomended  -->
-                  <div class="col"><img src="img/feedback.jpg" class="card-img-top rounded-4" alt=""></div>
-                  <div class="col"><img src="img/feedback.jpg" class="card-img-top rounded-4" alt=""></div>
-                  <div class="col"><img src="img/feedback.jpg" class="card-img-top rounded-4" alt=""></div>
-                  <div class="col"><img src="img/feedback.jpg" class="card-img-top rounded-4" alt=""></div>
-                </div>
-              </div>
-
+            <div class="card my-1 mx-2 border-0 overflow-hidden" >
+              <img src="img/hair-care.jpg" class="card-img-top " alt="...">
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#review-carousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#review-carousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+
+            <div class="card my-1 mx-2 border-0 overflow-hidden" >
+              <img src="img/hair-care.jpg" class="card-img-top " alt="...">
+            </div>
+            <div class="card my-1 mx-2 border-0 overflow-hidden" >
+              <img src="img/hair-care.jpg" class="card-img-top " alt="...">
+            </div>
+            <div class="card my-1 mx-2 border-0 overflow-hidden" >
+              <img src="img/hair-care.jpg" class="card-img-top " alt="...">
+            </div>
+            
           </div>
+          
         </div>
       </div>
     </section>
@@ -884,53 +874,53 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
     
-    
+    <!-- <script src="js/jquery_3.7.0_jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script> -->
 
 
     <!--slick js link-->
-<!--     
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
       
 
     <script src="js/jquery_3.7.0_jquery.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script> -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
 
-<!-- 
+
     <script>
-      $('.trend-course-slide').slick({
+      $('.rev-slide').slick({
         infinite: true,
-    slidesToShow: 3,
-    centerPadding: '20px',
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2,
+        slidesToShow: 3,
+        centerPadding: '200px',
         slidesToScroll: 1,
-        centerPadding: '20px',
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-    
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-      });
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            centerPadding: '200px',
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+          });
     </script>
-        -->
+        
 </body>
 </html>
